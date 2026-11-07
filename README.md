@@ -32,7 +32,7 @@ This repository holds the **AI part** of the project: the Google Colab notebooks
 ## Repository layout
 
 ```
-nakhlah-ai/
+Nakhlah/
 ├── notebooks/
 │   ├── experiments/                                   # fair tests: same split, same recipe, only the model or data changes
 │   │   ├── Nakhlah_EdgeNeXt_MAT_to_MAT.ipynb           # 85% of all 3 places -> locked 15%, and farms -> Madinah
@@ -84,7 +84,7 @@ Cleaning steps in every notebook:
 - Exact duplicate photos are found by MD5 hash and only one copy is kept. If the same photo was saved under two different classes, both copies are removed.
 - The Madinah `insectInfestation` class is not one of our four classes, so those boxes are skipped.
 
-Images are **not** stored in this repository. See [`data/README.md`](data/README.md).
+Images are **not** stored in the git repository. Our two farms can be downloaded from the [`data-v1` release](https://github.com/Lat-ash/Nakhlah/releases/tag/data-v1). See [`data/README.md`](data/README.md) for details.
 
 ## Method
 
