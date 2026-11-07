@@ -196,13 +196,11 @@ The weights are not committed to git. See [`models/README.md`](models/README.md)
 CS499 Senior Project, College of Computer and Information Sciences, Prince Sultan University, 2026.
 Supervisor: **Dr. Fatimah Alshannaq**
 
-| Member | Role |
-|---|---|
-| Fatoon Aljunobi | Team Leader |
-| Latifah Bin Showaish | Hardware Head |
-| Rama Hassan | Programming Head |
-| Shiyam Alhudaithy | Software Engineering Head |
-| Lubna Alnajran | Documentation & Communications Lead |
+- Fatoon Aljunobi
+- Latifah Bin Showaish
+- Rama Hassan
+- Shiyam Alhudaithy
+- Lubna Alnajran
 
 ## Acknowledgements
 
