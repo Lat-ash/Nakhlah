@@ -1,0 +1,11 @@
+# Jetson Orin Nano (JetPack 6.2.1), inside the Python venv.
+# 1. First install the NVIDIA Jetson GPU build of PyTorch 2.11.0 (and torchvision) and cuDSS 0.7.1, not from PyPI.
+# 2. pip install -r requirements.txt
+# 3. pip install --no-deps ultralytics   (without --no-deps it replaces the GPU PyTorch with a CPU-only one)
+# The Colab notebooks install their own packages in cell 1.
+timm
+pymavlink
+pyserial
+opencv-python<4.12
+numpy<2
+pillow

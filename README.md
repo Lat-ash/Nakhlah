@@ -49,6 +49,7 @@ Nakhlah/
 │   ├── nakhlah_classify.py     # classifier only, on ready-made leaf crops (speed + accuracy test)
 │   ├── nakhlah_video.py        # runs the pipeline on a recorded video and draws the results
 │   └── nakhlah.service         # starts nakhlah_capture.py when the Jetson powers on
+├── requirements.txt          # Python packages for the Jetson
 ├── .gitignore
 └── README.md
 ```
@@ -164,7 +165,11 @@ The notebooks export the four model files the Jetson needs: `edgenext_nakhlah.pt
 
 ## Running on the Jetson
 
-**Environment**: JetPack 6.2.1, Python venv, PyTorch 2.11.0 (NVIDIA Jetson GPU build), cuDSS 0.7.1, timm, pymavlink, pyserial, OpenCV < 4.12, NumPy < 2. Install Ultralytics with `pip install --no-deps ultralytics`, otherwise it replaces the GPU build of PyTorch with a CPU-only one.
+**Environment**: JetPack 6.2.1 and a Python venv. Install in this order:
+
+1. The NVIDIA Jetson GPU build of PyTorch 2.11.0 (and torchvision) and cuDSS 0.7.1, not from PyPI.
+2. `pip install -r requirements.txt` (timm, pymavlink, pyserial, OpenCV < 4.12, NumPy < 2, Pillow).
+3. `pip install --no-deps ultralytics`. Without `--no-deps` it replaces the GPU build of PyTorch with a CPU-only one.
 
 Put the four model files in the same folder as the programs, then:
 
