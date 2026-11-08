@@ -1,33 +1,15 @@
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-env/
-.ipynb_checkpoints/
-.env
-*.key
-secrets.*
-roboflow_key*
-data/*
-!data/README.md
-datasets/
-ds_*/
-crops/
-yolo_leaf/
-runs/
-models/*
-!models/README.md
+# model weights and exports (too large for GitHub; kept in Google Drive)
 *.pt
-*.pth
 *.onnx
 *.engine
-*.trt
-*.safetensors
+# flight results, videos and datasets
+nakhlah_flights/
+nakhlah_videos/
+nakhlah_results/
+*.mp4
 *.zip
-split.csv
-roles.csv
-qassim_split.csv
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+datasets/
+# Python
+__pycache__/
+env/
+.ipynb_checkpoints/

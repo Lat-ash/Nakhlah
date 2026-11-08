@@ -1,0 +1,17 @@
+# Copy to /etc/systemd/system/nakhlah.service, then:
+#   sudo systemctl daemon-reload && sudo systemctl enable --now nakhlah
+[Unit]
+Description=Nakhlah capture
+After=network.target
+
+[Service]
+User=nakhlah
+WorkingDirectory=/home/nakhlah/Desktop/nakhlah_edgenet
+ExecStartPre=/bin/sleep 20
+ExecStart=/home/nakhlah/nakhlah/env/bin/python3 nakhlah_capture.py --channel 6
+KillSignal=SIGINT
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
